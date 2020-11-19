@@ -1,0 +1,32 @@
+@use '../settings/breakpoint' as *;
+
+
+@mixin small-and-up {
+  @media (min-width: breakpoint('small')) {
+    @content;
+  }
+}
+
+@mixin medium-and-up {
+  @media (min-width: breakpoint('medium')) {
+    @content;
+  }
+}
+
+@mixin large-and-up {
+  @media (min-width: breakpoint('large')) {
+    @content;
+  }
+}
+
+@mixin xlarge-and-up {
+  @media (min-width: breakpoint('xlarge')) {
+    @content;
+  }
+}
+
+@mixin huge-and-up {
+  @media (min-width: breakpoint('huge')) {
+    @content;
+  }
+}

@@ -1,0 +1,8 @@
+$shadow: (
+  'subtle':     0 2px 4px rgba(black,0.08),
+  'floating':   0 2px 10px rgba(black,0.05)
+);
+
+@function shadow($key) {
+  @return map-get($shadow, $key);
+}

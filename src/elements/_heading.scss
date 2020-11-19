@@ -1,0 +1,23 @@
+@use '../settings/font' as *;
+@use '../settings/spacing' as *;
+
+
+h1, h2, h3, h4 {
+  margin: 0 0 spacing('small');
+}
+
+h1 {
+  font-size: font('size','xxlarge');
+}
+
+h2 {
+  font-size: font('size','xlarge');
+}
+
+h3 {
+  font-size: font('size','large');
+}
+
+h4 {
+  font-size: font('size','base');
+}

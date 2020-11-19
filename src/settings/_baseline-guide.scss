@@ -1,0 +1,21 @@
+@use 'color' as *;
+@use 'shade' as *;
+@use 'spacing' as *;
+
+
+$SHOW_BASELINE_GUIDE: false;
+
+$baseline-guide: (
+  'size': $baseline * 2,
+  'color': shade($opacity: 0.05),
+
+  'bound': (
+    'bg': color('primary', $opacity: 0.1),
+    'border': color('primary', $opacity: 0.2)
+  )
+) !default;
+
+
+@function baseline-guide($keys...) {
+  @return map-get($baseline-guide, $keys...);
+}

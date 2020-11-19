@@ -1,0 +1,12 @@
+$depth: (
+  'background':    -1,
+  'neutral':        0,
+  'foreground':     1,
+  'floating':       2,
+  'overlay':        3,
+  'baseline':       4
+) !default;
+
+@function depth($key) {
+  @return map-get($depth, $key);
+}

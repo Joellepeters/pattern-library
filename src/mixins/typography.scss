@@ -1,0 +1,18 @@
+@use '../mixins/bounding-box' as *;
+@use '../settings/font' as *;
+@use '../settings/spacing' as *;
+
+
+@mixin headline {
+  @include bounding-box;
+  font-size: font('size','base');
+  font-weight: font('weight','bold');
+  line-height: $baseline * 5;
+}
+
+@mixin subheadline {
+  @include bounding-box;
+  font-size: font('size','base');
+  font-weight: font('weight','normal');
+  line-height: $baseline * 5;
+}

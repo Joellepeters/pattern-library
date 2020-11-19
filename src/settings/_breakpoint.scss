@@ -1,0 +1,11 @@
+$breakpoint: (
+  'small':        576px,
+  'medium':       768px,
+  'large':        992px,
+  'xlarge':       1450px,
+  'huge':         1700px
+) !default;
+
+@function breakpoint($key) {
+  @return map-get($breakpoint, $key);
+}

@@ -1,0 +1,26 @@
+@use '../settings/font' as *;
+@use '../settings/spacing' as *;
+
+
+.Link {
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  font-size: font('size','base');
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+
+
+  /**
+   * Variants
+   */
+
+  &-spacious {
+    padding: spacing('base') spacing('large');
+  }
+
+  &-bold {
+    font-weight: font('weight','bold');
+  }
+}

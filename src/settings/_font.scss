@@ -1,0 +1,17 @@
+$font: (
+  'weight': (
+    'regular':    400,
+    'medium':     500,
+    'bold':       600,
+  ),
+  'size': (
+    'small':      14px,
+    'base':       16px,
+    'large':      18px,
+    'xlarge':     23px,
+    'xxlarge':    28px,
+    'huge':       35px,
+  )
+);
+
+@function font($key...) { @return map-get($font, $key...); }

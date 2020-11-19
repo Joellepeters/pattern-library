@@ -1,0 +1,22 @@
+@use '../settings/baseline-guide' as *;
+@use '../settings/depth' as *;
+
+
+@mixin baseline-guide {
+  @if $SHOW_BASELINE_GUIDE {
+    &:before {
+      content: '';
+      pointer-events: none;
+      z-index: depth('baseline');
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-image: repeating-linear-gradient(
+        to bottom,
+        baseline-guide('color'),
+        baseline-guide('color') baseline-guide('size'),
+        transparent baseline-guide('size'),
+        transparent baseline-guide('size')*2);
+    }
+  }
+}

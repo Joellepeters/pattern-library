@@ -1,0 +1,49 @@
+@use '../settings/spacing' as *;
+
+
+.u-s-p-none {padding: none !important;}
+
+.u-s-m-none {margin: none !important;}
+
+
+@each $key, $value in $spacing {
+  .u-s-m-#{$key}  {margin: $value !important;}
+
+  .u-s-mt-#{$key} {margin-top: $value !important;}
+
+  .u-s-mr-#{$key} {margin-right: $value !important;}
+
+  .u-s-mb-#{$key} {margin-bottom: $value !important;}
+
+  .u-s-ml-#{$key} {margin-left: $value !important;}
+
+  .u-s-p-#{$key} {padding: $value !important;}
+
+  .u-s-pt-#{$key} {padding-top: $value !important;}
+
+  .u-s-pr-#{$key} {padding-right: $value !important;}
+
+  .u-s-pb-#{$key} {padding-bottom: $value !important;}
+
+  .u-s-pl-#{$key} {padding-left: $value !important;}
+
+  .u-s-me-#{$key} {
+    margin-top: $value !important;
+    margin-bottom: $value !important;
+  }
+
+  .u-s-ms-#{$key} {
+    margin-left: $value !important;
+    margin-right: $value !important;
+  }
+
+  .u-s-pe-#{$key} {
+    padding-top: $value !important;
+    padding-bottom: $value !important;
+  }
+
+  .u-s-ps-#{$key} {
+    padding-left: $value !important;
+    padding-right: $value !important;
+  }
+}

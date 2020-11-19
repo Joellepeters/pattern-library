@@ -1,0 +1,12 @@
+@use '../settings/baseline-guide' as *;
+
+
+@mixin bounding-box {
+  @if $SHOW_BASELINE_GUIDE {
+    background: baseline-guide('bound','bg') !important;
+    box-shadow:
+      inset 1px 1px 0 baseline-guide('bound','border'),
+      inset -1px -1px 0 baseline-guide('bound','border')
+      !important;
+  }
+}

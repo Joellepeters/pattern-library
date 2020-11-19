@@ -1,0 +1,9 @@
+$weight: (
+  'bold':         600,
+  'semi-bold':    500,
+  'regular':      400
+);
+
+@function weight($key) {
+  @return map-get($weight, $key);
+}

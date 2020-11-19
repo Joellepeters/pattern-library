@@ -1,0 +1,12 @@
+@use '../settings/font' as *;
+
+
+button {
+  cursor: pointer;
+  outline: none;
+  background-color: none;
+  border: none;
+  padding: 0;
+  font-family: font('family');
+  font-size: font('size','base');
+}

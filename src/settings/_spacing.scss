@@ -1,0 +1,15 @@
+$baseline:       4px !default;
+
+$spacing: (
+  'micro':       $baseline / 2,
+  'tiny':        $baseline,
+  'small':       $baseline * 2,
+  'base':        $baseline * 3,
+  'large':       $baseline * 5,
+  'xlarge':      $baseline * 8,
+  'huge':        $baseline * 10
+) !default;
+
+@function spacing($key) {
+  @return map-get($spacing, $key);
+}

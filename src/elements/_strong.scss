@@ -1,0 +1,6 @@
+@use '../settings/font' as *;
+
+
+strong {
+  font-weight: font('weight','bold');
+}

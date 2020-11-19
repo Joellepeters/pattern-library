@@ -1,0 +1,6 @@
+@use '../settings/font' as *;
+
+
+small {
+  font-size: font('size','small');
+}
