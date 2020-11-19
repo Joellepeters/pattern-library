@@ -32,5 +32,6 @@
     "/src/themes/**/*",
     "/src/utilities/**/*",
     "/dist/themes/**/*"
-  ]
+  ],
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
 }
