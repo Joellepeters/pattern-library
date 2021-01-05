@@ -1,5 +1,5 @@
 {
-  "name": "pattern-library",
+  "name": "@joellepeters/pattern-library",
   "version": "1.0.0",
   "description": "Pattern Library",
   "author": "Joelle Peters",
@@ -24,6 +24,6 @@
     "webpack-cli": "^4.1.0"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@joellepeters"
+    "registry": "https://npm.pkg.github.com"
   }
 }
