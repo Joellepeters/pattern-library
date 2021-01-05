@@ -1,7 +1,7 @@
 {
   "name": "pattern-library",
   "version": "1.0.0",
-  "description": "UI Pattern Library",
+  "description": "Pattern Library",
   "author": "Joelle Peters",
   "scripts": {
     "prepare": "npm run build",
@@ -23,15 +23,7 @@
     "webpack": "^5.1.3",
     "webpack-cli": "^4.1.0"
   },
-  "files": [
-    "/src/components/**/*",
-    "/src/elements/**/*",
-    "/src/functions/**/*",
-    "/src/mixins/**/*",
-    "/src/settings/**/*",
-    "/src/themes/**/*",
-    "/src/utilities/**/*",
-    "/dist/themes/**/*"
-  ],
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/@joellepeters"
+  }
 }
