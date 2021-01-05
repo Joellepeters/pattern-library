@@ -1,4 +1,4 @@
-$baseline:       4px !default;
+@use "./baseline" as *;
 
 $spacing: (
   'micro':       $baseline / 2,
